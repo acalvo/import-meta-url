@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'import-meta-url';
+  logo = (new URL('../svgs/angular.svg', import.meta.url)).toString();
 }
