@@ -1,8 +1,10 @@
 module.exports = {
-    "preset": "jest-preset-angular/presets/defaults-esm",
+    "extensionsToTreatAsEsm": ['.ts'],
     "globals": {
         "ts-jest": {
-            "tsconfig": "<rootDir>/tsconfig.spec.json"
+            "tsconfig": "<rootDir>/tsconfig.spec.json",
+            "stringifyContentPathRegex": '\\.html$',
+            "useESM": true,
         }
     }
 };
